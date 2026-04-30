@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cebraspe 100 — Questões Comentadas de Português · Prof. Cláudia Kozlowski</title>
+<meta name="description" content="Pare de estudar gramática. Comece a estudar a banca. 100+ questões Cebraspe decodificadas em 6 módulos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2170582326755653');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root {
+    --azul-noite: #0A1F44;
+    --azul-noite-90: #14294F;
+    --azul-profundo: #061638;
+    --bordo: #6B1028;
+    --bordo-80: #7F1F39;
+    --dourado: #C9A24B;
+    --dourado-claro: #E3C278;
+    --marfim: #F5EBD6;
+    --marfim-90: #EFE3C7;
+    --marfim-branco: #FBF7EC;
+    --grafite: #1C1C1C;
+    --tinta: #0A0A0A;
+    --vermelho-tinta: #B91C1C;
+    --verde-ok: #2F7D4A;
+    --cinza-linha: rgba(10,31,68,0.12);
+    --cinza-texto: #5C5F6A;
+    --display: 'Playfair Display', Georgia, serif;
+    --editorial: 'Cormorant Garamond', Georgia, serif;
+    --corpo: 'Lora', Georgia, serif;
+  }
+
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--marfim);
+    color: var(--tinta);
+    font-family: var(--corpo);
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--dourado); color: var(--azul-noite); }
+
+  /* ============ UTIL ============ */
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+  .wrap-narrow { max-width: 820px; margin: 0 auto; padding: 0 32px; }
+
+  .eyebrow {
+    font-family: var(--corpo);
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  h1 em, h2 em, h3 em { font-style: italic; }
+
+  .filete {
+    width: 60px; height: 0.5px;
+    background: var(--dourado);
+    margin: 16px 0;
+  }
+  .filete-centro { margin-left: auto; margin-right: auto; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center; gap: 12px;
+    padding: 20px 36px;
+    background: var(--dourado);
+    color: var(--azul-noite);
+    text-decoration: none;
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: all 0.2s ease;
+    border: none; cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid var(--bordo);
+  }
+  .btn:hover {
+    background: var(--dourado-claro);
+    transform: translateY(-1px);
+  }
+  .btn .arrow {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 400;
+  }
+  .btn-reverse {
+    background: var(--marfim);
+    color: var(--azul-noite);
+    border-bottom-color: var(--dourado);
+  }
+  .btn-reverse:hover { background: var(--marfim-branco); }
+  .btn-outline {
+    background: transparent;
+    color: var(--marfim);
+    border: 1px solid var(--dourado);
+    padding: 18px 32px;
+  }
+
+  /* ============ STICKY NAV ============ */
+  .navbar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--azul-noite);
+    color: var(--marfim);
+    border-bottom: 1px solid rgba(201,162,75,0.18);
+    padding: 14px 32px;
+  }
+  .navbar .inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 24px;
+  }
+  .navbar .marca-nav {
+    font-family: var(--display);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex; align-items: baseline; gap: 10px;
+  }
+  .navbar .marca-nav em {
+    font-style: italic;
+    color: var(--dourado);
+    font-weight: 900;
+  }
+  .navbar .marca-nav .eyebrow-nav {
+    font-family: var(--corpo);
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--dourado);
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    margin-bottom: -2px;
+  }
+  .navbar .cta-nav {
+    font-family: var(--display);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--azul-noite);
+    background: var(--dourado);
+    padding: 10px 22px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+  .navbar .cta-nav:hover { background: var(--dourado-claro); }
+  @media (max-width: 640px) {
+    .navbar { padding: 12px 20px; }
+    .navbar .marca-nav { font-size: 16px; }
+    .navbar .cta-nav { font-size: 12px; padding: 8px 14px; }
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    background: var(--azul-noite);
+    color: var(--marfim);
+    padding: 100px 0 120px;
+    position: relative; overflow: hidden;
+    border-bottom: 4px solid var(--dourado);
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at top right, rgba(201,162,75,0.1), transparent 60%),
+      radial-gradient(ellipse at bottom left, rgba(107,16,40,0.25), transparent 55%);
+    pointer-events: none;
+  }
+  .hero .wrap { position: relative; }
+  .hero .eyebrow { color: var(--dourado); }
+  .hero h1 {
+    font-size: clamp(2.2rem, 5.5vw, 4rem);
+    line-height: 1.02;
+    max-width: 960px;
+    margin-bottom: 24px;
+  }
+  .hero h1 em { color: var(--dourado); }
+  .hero h1 s {
+    text-decoration-color: var(--vermelho-tinta);
+    text-decoration-thickness: 3px;
+    opacity: 0.75;
+  }
+  .hero .sub {
+    font-family: var(--editorial);
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    font-style: italic;
+    color: rgba(245,235,214,0.82);
+    max-width: 680px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+  .hero .cta-row {
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .hero .cta-row .preco-hero {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--dourado-claro);
+  }
+  .hero .cta-row .preco-hero strong {
+    font-family: var(--display);
+    font-style: normal;
+    color: var(--marfim);
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .trust-bar {
+    padding-top: 32px;
+    border-top: 1px solid rgba(201,162,75,0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .trust-bar .item {
+    font-family: var(--corpo);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(245,235,214,0.75);
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .trust-bar .item strong {
+    display: block;
+    font-family: var(--display);
+    font-size: 22px;
+    color: var(--dourado);
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -0.5px;
+    margin-bottom: 2px;
+    text-transform: none;
+  }
+  @media (max-width: 760px) {
+    .trust-bar { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  }
+
+  /* ============ SECTION BASE ============ */
+  .section {
+    padding: 120px 0;
+    position: relative;
+  }
+  .section.dark {
+    background: var(--azul-noite);
+    color: var(--marfim);
+  }
+  .section.bordo {
+    background: var(--bordo);
+    color: var(--marfim);
+  }
+  .section.marfim-dense {
+    background: var(--marfim-90);
+  }
+
+  .section-eyebrow {
+    font-family: var(--corpo);
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bordo);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .section.dark .section-eyebrow,
+  .section.bordo .section-eyebrow {
+    color: var(--dourado);
+  }
+
+  .section h2 {
+    font-size: clamp(2rem, 4.2vw, 3.2rem);
+    color: var(--azul-noite);
+    margin-bottom: 24px;
+    max-width: 900px;
+  }
+  .section.dark h2, .section.bordo h2 { color: var(--marfim); }
+  .section h2 em { color: var(--bordo); }
+  .section.dark h2 em, .section.bordo h2 em { color: var(--dourado); }
+
+  .section .sub-h {
+    font-family: var(--editorial);
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    font-style: italic;
+    color: var(--cinza-texto);
+    max-width: 720px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+  }
+  .section.dark .sub-h, .section.bordo .sub-h {
+    color: rgba(245,235,214,0.78);
+  }
+
+  .section p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--grafite);
+    margin-bottom: 18px;
+  }
+  .section.dark p, .section.bordo p {
+    color: rgba(245,235,214,0.88);
+  }
+  .section p em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--bordo);
+  }
+  .section.dark p em, .section.bordo p em {
+    color: var(--dourado);
+  }
+
+  /* ============ DOR · VALIDAÇÃO ============ */
+  .cenario-list {
+    display: grid;
+    gap: 20px;
+    counter-reset: cenario;
+  }
+  .cenario {
+    background: white;
+    border: 1px solid var(--cinza-linha);
+    border-left: 3px solid var(--bordo);
+    padding: 28px 32px;
+    position: relative;
+    counter-increment: cenario;
+  }
+  .cenario::before {
+    content: counter(cenario, decimal-leading-zero);
+    position: absolute;
+    top: 28px; right: 32px;
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 28px;
+    color: var(--dourado);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .cenario .aspas {
+    font-family: var(--display);
+    font-size: 44px;
+    line-height: 0.8;
+    color: var(--dourado);
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+  .cenario p {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.18rem;
+    color: var(--grafite);
+    line-height: 1.4;
+    padding-right: 40px;
+    margin: 0;
+  }
+
+  /* ============ REFRAME / BIG IDEA ============ */
+  .reframe-container {
+    text-align: center;
+    padding: 40px 0 20px;
+  }
+  .reframe-quote {
+    font-family: var(--display);
+    font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+    line-height: 1.2;
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto 40px;
+  }
+  .reframe-quote em { color: var(--dourado); }
+  .reframe-divider {
+    width: 60px; height: 0.5px;
+    background: var(--dourado);
+    margin: 48px auto;
+  }
+  .reframe-callout {
+    background: rgba(245,235,214,0.06);
+    border-left: 3px solid var(--dourado);
+    padding: 32px 36px;
+    max-width: 760px;
+    margin: 40px auto 0;
+    text-align: left;
+  }
+  .reframe-callout .aspas-big {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 64px;
+    line-height: 0.6;
+    color: var(--dourado);
+    display: block;
+    margin-bottom: 10px;
+  }
+  .reframe-callout p {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--marfim);
+    margin: 0;
+  }
+
+  /* ============ DEMONSTRAÇÃO / 3 QUESTÕES ============ */
+  .questoes-grid {
+    display: grid;
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .questao-card {
+    background: white;
+    border: 1px solid var(--cinza-linha);
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+  }
+  .questao-card .tab {
+    background: var(--azul-noite);
+    color: var(--dourado);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .questao-card .tab .romano {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dourado);
+  }
+  .questao-card .tab .tipo {
+    font-family: var(--corpo);
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--marfim);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .questao-card .conteudo {
+    padding: 32px 36px;
+  }
+  .questao-card .origem {
+    font-family: var(--corpo);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--bordo);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .questao-card .texto-base {
+    font-family: var(--corpo);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--grafite);
+    padding: 14px 18px;
+    background: var(--marfim-90);
+    border-left: 2px solid var(--dourado);
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+  .questao-card .assertiva {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    line-height: 1.4;
+    color: var(--azul-noite);
+    margin: 12px 0;
+    padding-left: 18px;
+    border-left: 3px solid var(--bordo);
+  }
+  .questao-card .gabarito {
+    display: inline-block;
+    font-family: var(--corpo);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background: var(--vermelho-tinta);
+    padding: 4px 14px;
+    margin: 6px 0 16px;
+  }
+  .questao-card .gabarito.certo {
+    background: var(--verde-ok);
+  }
+  .questao-card .decodificacao {
+    font-family: var(--corpo);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--grafite);
+    padding-top: 16px;
+    border-top: 1px dashed var(--cinza-linha);
+  }
+  .questao-card .decodificacao strong {
+    font-family: var(--display);
+    font-weight: 600;
+    color: var(--bordo);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .questao-card .decodificacao em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--bordo);
+  }
+  @media (max-width: 640px) {
+    .questao-card { grid-template-columns: 60px 1fr; }
+    .questao-card .conteudo { padding: 24px 22px; }
+    .questao-card .tab .tipo { display: none; }
+  }
+
+  /* ============ APRESENTAÇÃO DO PRODUTO ============ */
+  .apresenta-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  @media (max-width: 860px) {
+    .apresenta-grid { grid-template-columns: 1fr; gap: 48px; }
+  }
+  .apresenta-text p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+  .apresenta-text p:first-of-type {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--dourado-claro);
+    margin-bottom: 32px;
+  }
+
+  /* Mockup da capa do curso (reusa estrutura do ID visual) */
+  .mockup-capa {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    aspect-ratio: 210/297;
+    background: var(--bordo);
+    color: var(--marfim);
+    padding: 54px 42px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    position: relative; overflow: hidden;
+    box-shadow:
+      0 30px 80px rgba(0,0,0,0.4),
+      0 8px 20px rgba(0,0,0,0.3);
+    border-top: 8px solid var(--dourado);
+    transform: perspective(1400px) rotateY(-8deg);
+    transition: transform 0.6s ease;
+  }
+  .mockup-capa:hover { transform: perspective(1400px) rotateY(-4deg); }
+  .mockup-capa::before {
+    content: ""; position: absolute; inset: 24px;
+    border: 1px solid rgba(201,162,75,0.25);
+  }
+  .mockup-capa .top-cap {
+    text-align: center; z-index: 1;
+  }
+  .mockup-capa .eyebrow-cap {
+    font-family: var(--corpo); font-size: 9px;
+    letter-spacing: 4px; color: var(--dourado);
+    text-transform: uppercase; font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .mockup-capa .nome-cap {
+    font-family: var(--display);
+    font-size: 34px; color: var(--marfim);
+    font-weight: 500; line-height: 1.05;
+    letter-spacing: -0.5px;
+  }
+  .mockup-capa .num-cap {
+    font-family: var(--display);
+    font-size: 130px; color: var(--dourado);
+    font-weight: 900; font-style: italic;
+    line-height: 1; letter-spacing: -6px;
+    text-align: center;
+    z-index: 1;
+  }
+  .mockup-capa .bot-cap {
+    text-align: center; z-index: 1;
+  }
+  .mockup-capa .ass-cap {
+    font-family: var(--editorial);
+    font-size: 15px; font-style: italic;
+    color: var(--marfim);
+  }
+  .mockup-capa .filete-cap {
+    height: 0.5px; background: var(--dourado);
+    width: 70px; margin: 12px auto;
+  }
+  .mockup-capa .meta-cap {
+    font-family: var(--corpo); font-size: 8px;
+    letter-spacing: 3.5px; color: var(--dourado);
+    text-transform: uppercase; font-weight: 600;
+  }
+
+  /* ============ MÓDULOS ============ */
+  .modulos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  @media (max-width: 760px) { .modulos-grid { grid-template-columns: 1fr; } }
+  .modulo {
+    background: white;
+    border: 1px solid var(--cinza-linha);
+    padding: 32px 36px;
+    position: relative;
+  }
+  .modulo .num-mod {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 32px;
+    color: var(--dourado);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .modulo .num-mod::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 0.5px;
+    background: var(--bordo);
+    margin-top: 12px;
+  }
+  .modulo h3 {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    color: var(--azul-noite);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .modulo h3 em { color: var(--bordo); }
+  .modulo p {
+    font-family: var(--corpo);
+    font-size: 0.95rem;
+    color: var(--grafite);
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+  .modulo .temas {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--cinza-texto);
+    padding-top: 14px;
+    border-top: 1px dashed var(--cinza-linha);
+  }
+
+  /* ============ BÔNUS ============ */
+  .bonus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 48px;
+  }
+  @media (max-width: 820px) { .bonus-grid { grid-template-columns: 1fr; } }
+  .bonus-card {
+    background: rgba(245,235,214,0.05);
+    border: 1px solid rgba(201,162,75,0.25);
+    padding: 40px 40px;
+    position: relative;
+  }
+  .bonus-card .tag-b {
+    display: inline-block;
+    font-family: var(--corpo);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--azul-noite);
+    background: var(--dourado);
+    padding: 4px 12px;
+    margin-bottom: 24px;
+  }
+  .bonus-card h3 {
+    font-family: var(--display);
+    font-size: 1.7rem;
+    color: var(--marfim);
+    font-weight: 500;
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+  .bonus-card h3 em { color: var(--dourado); }
+  .bonus-card p {
+    font-family: var(--corpo);
+    font-size: 1rem;
+    color: rgba(245,235,214,0.88);
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+  .bonus-card p em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--dourado-claro);
+  }
+  .bonus-card .valor-b {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--dourado);
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px dashed rgba(201,162,75,0.3);
+  }
+  .bonus-card .valor-b strong {
+    font-family: var(--display);
+    font-style: normal;
+    font-weight: 500;
+    color: var(--marfim);
+  }
+
+  /* ============ PROFESSORA ============ */
+  .professora-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+    align-items: start;
+    margin-top: 48px;
+  }
+  @media (max-width: 760px) { .professora-grid { grid-template-columns: 1fr; gap: 32px; } }
+
+  .foto-prof {
+    aspect-ratio: 3/4;
+    background: var(--azul-noite);
+    position: relative;
+    border-bottom: 4px solid var(--dourado);
+    overflow: hidden;
+  }
+  .foto-prof img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+    image-orientation: from-image;
+  }
+  .prof-text .nome-prof {
+    font-family: var(--display);
+    font-size: 2rem;
+    color: var(--azul-noite);
+    margin-bottom: 4px;
+  }
+  .prof-text .titulo-prof {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--bordo);
+    margin-bottom: 24px;
+  }
+  .prof-text p {
+    font-size: 1.05rem;
+    color: var(--grafite);
+    margin-bottom: 16px;
+  }
+  .prof-text .credenciais {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    border-top: 1px solid var(--cinza-linha);
+    padding-top: 20px;
+  }
+  .prof-text .credenciais li {
+    font-family: var(--corpo);
+    font-size: 0.95rem;
+    color: var(--grafite);
+    padding: 6px 0 6px 24px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .prof-text .credenciais li::before {
+    content: "—";
+    position: absolute; left: 0;
+    color: var(--dourado);
+    font-weight: 700;
+  }
+  .prof-text .credenciais li em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--bordo);
+  }
+
+  /* ============ PARA QUEM ============ */
+  .paraquem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 48px;
+  }
+  @media (max-width: 760px) { .paraquem-grid { grid-template-columns: 1fr; } }
+  .paraquem-col {
+    padding: 40px 44px;
+    background: rgba(245,235,214,0.04);
+    border-left: 3px solid var(--dourado);
+  }
+  .paraquem-col.nao {
+    border-left-color: var(--vermelho-tinta);
+    background: rgba(185,28,28,0.06);
+  }
+  .paraquem-col h3 {
+    font-family: var(--display);
+    font-size: 1.5rem;
+    color: var(--marfim);
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+  .paraquem-col h3 em { color: var(--dourado); font-style: italic; }
+  .paraquem-col.nao h3 em { color: var(--vermelho-tinta); }
+  .paraquem-col ul {
+    list-style: none;
+    padding: 0;
+  }
+  .paraquem-col li {
+    font-family: var(--corpo);
+    font-size: 1rem;
+    color: rgba(245,235,214,0.88);
+    line-height: 1.55;
+    padding: 10px 0 10px 28px;
+    position: relative;
+    border-bottom: 1px dashed rgba(245,235,214,0.1);
+  }
+  .paraquem-col li::before {
+    content: "—";
+    position: absolute; left: 0;
+    color: var(--dourado);
+    font-weight: 700;
+  }
+  .paraquem-col.nao li::before {
+    color: var(--vermelho-tinta);
+    content: "✗";
+    font-family: var(--display);
+    font-size: 0.9rem;
+  }
+  .paraquem-col li:last-child { border-bottom: 0; }
+
+  /* ============ DEPOIMENTOS · GRID DE IMAGENS REAIS ============ */
+  .depo-img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    align-items: start;
+    margin-top: 48px;
+  }
+  @media (max-width: 760px) { .depo-img-grid { grid-template-columns: 1fr; } }
+
+  .depo-img-card {
+    background: white;
+    border: 1px solid var(--cinza-linha);
+    border-top: 3px solid var(--dourado);
+    padding: 0;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .depo-img-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(10,31,68,0.12);
+  }
+  .depo-img-card .depo-img-frame {
+    background: var(--marfim-90);
+    padding: 18px 18px 0;
+    display: block;
+  }
+  .depo-img-card .depo-img-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--cinza-linha);
+  }
+  .depo-img-card .depo-img-meta {
+    padding: 18px 22px 22px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px;
+    background: var(--marfim-90);
+    border-top: 1px dashed var(--cinza-linha);
+  }
+  .depo-img-card .depo-tag {
+    font-family: var(--corpo);
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bordo);
+  }
+  .depo-img-card .depo-context {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--azul-noite);
+  }
+  .depo-img-card .depo-context em {
+    font-family: var(--display);
+    font-style: italic;
+    color: var(--bordo);
+    font-weight: 500;
+  }
+  .depo-img-grid .depo-img-card.destaque {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+  .depo-img-grid .depo-img-card.destaque .depo-img-frame {
+    padding: 22px;
+  }
+  .depo-img-grid .depo-img-card.destaque .lado-frase {
+    background: var(--azul-noite);
+    color: var(--marfim);
+    padding: 36px 34px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .depo-img-grid .depo-img-card.destaque .lado-frase .quote-mark {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 80px;
+    line-height: 0.5;
+    color: var(--dourado);
+    margin-bottom: 18px;
+    height: 36px;
+  }
+  .depo-img-grid .depo-img-card.destaque .lado-frase .quote-text {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 1.45;
+    color: var(--marfim);
+    margin-bottom: 18px;
+  }
+  .depo-img-grid .depo-img-card.destaque .lado-frase .quote-text em {
+    color: var(--dourado);
+  }
+  .depo-img-grid .depo-img-card.destaque .lado-frase .quote-ass {
+    font-family: var(--corpo);
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dourado);
+    font-weight: 600;
+  }
+  @media (max-width: 760px) {
+    .depo-img-grid .depo-img-card.destaque {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .depo-disclaimer {
+    text-align: center;
+    margin-top: 36px;
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  /* ============ DEPOIMENTOS ============ */
+  .depo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  @media (max-width: 760px) { .depo-grid { grid-template-columns: 1fr; } }
+  .depo {
+    background: white;
+    border: 1px solid var(--cinza-linha);
+    padding: 32px 36px;
+    position: relative;
+  }
+  .depo::before {
+    content: "\201C";
+    position: absolute;
+    top: 16px; right: 28px;
+    font-family: var(--display);
+    font-size: 80px;
+    line-height: 0.8;
+    color: var(--dourado);
+    opacity: 0.3;
+    font-style: italic;
+  }
+  .depo .texto-depo {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.55;
+    color: var(--grafite);
+    margin-bottom: 20px;
+    position: relative; z-index: 1;
+  }
+  .depo .texto-depo em {
+    font-style: normal;
+    color: var(--bordo);
+    font-weight: 600;
+  }
+  .depo .assinatura-depo {
+    padding-top: 16px;
+    border-top: 1px solid var(--cinza-linha);
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .depo .nome-depo {
+    font-family: var(--display);
+    font-weight: 600;
+    color: var(--azul-noite);
+    font-size: 1rem;
+  }
+  .depo .concurso-depo {
+    font-family: var(--corpo);
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--bordo);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .depo-footnote {
+    text-align: center;
+    margin-top: 32px;
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+  }
+
+  /* ============ OFERTA · PREÇO ============ */
+  .oferta-box {
+    max-width: 720px;
+    margin: 48px auto 0;
+    background: var(--marfim);
+    color: var(--grafite);
+    padding: 56px 56px;
+    text-align: center;
+    position: relative;
+    border: 1px solid var(--dourado);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+  }
+  .oferta-box::before {
+    content: ""; position: absolute; inset: 12px;
+    border: 0.5px solid rgba(201,162,75,0.4);
+    pointer-events: none;
+  }
+  .oferta-box .selo-oferta {
+    display: inline-block;
+    font-family: var(--corpo);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bordo);
+    background: var(--marfim-90);
+    padding: 6px 16px;
+    margin-bottom: 24px;
+    position: relative; z-index: 1;
+  }
+  .oferta-box h3 {
+    font-family: var(--display);
+    font-size: 2rem;
+    color: var(--azul-noite);
+    margin-bottom: 24px;
+    line-height: 1.15;
+    position: relative; z-index: 1;
+  }
+  .oferta-box h3 em { color: var(--bordo); font-style: italic; }
+
+  .stack {
+    text-align: left;
+    margin: 32px 0;
+    position: relative; z-index: 1;
+    border-top: 0.5px solid var(--cinza-linha);
+    border-bottom: 0.5px solid var(--cinza-linha);
+  }
+  .stack .stack-item {
+    padding: 14px 4px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px dashed var(--cinza-linha);
+    font-family: var(--corpo);
+  }
+  .stack .stack-item:last-child { border-bottom: 0; }
+  .stack .stack-item .nome-s {
+    font-size: 1rem;
+    color: var(--grafite);
+    font-weight: 500;
+  }
+  .stack .stack-item .nome-s em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--cinza-texto);
+    font-size: 0.9rem;
+    display: block;
+    font-weight: 400;
+  }
+  .stack .stack-item .valor-s {
+    font-family: var(--display);
+    font-size: 1.1rem;
+    color: var(--grafite);
+    font-weight: 500;
+    font-style: italic;
+  }
+  .stack .stack-total {
+    padding: 18px 4px;
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-top: 1px solid var(--dourado);
+  }
+  .stack .stack-total .nome-t {
+    font-family: var(--display);
+    font-size: 1rem;
+    color: var(--bordo);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .stack .stack-total .valor-t {
+    font-family: var(--display);
+    font-size: 1.6rem;
+    color: var(--bordo);
+    font-weight: 600;
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: var(--bordo);
+    font-style: italic;
+  }
+
+  .preco-final {
+    position: relative; z-index: 1;
+    margin: 32px 0 24px;
+  }
+  .preco-final .label-pf {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--cinza-texto);
+    margin-bottom: 6px;
+  }
+  .preco-final .valor-pf {
+    font-family: var(--display);
+    font-size: clamp(3.5rem, 8vw, 5.5rem);
+    color: var(--azul-noite);
+    font-weight: 800;
+    font-style: italic;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+  .preco-final .valor-pf .cifra {
+    font-size: 0.5em;
+    vertical-align: super;
+    color: var(--bordo);
+  }
+  .preco-final .parcela-pf {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--grafite);
+    margin-top: 12px;
+  }
+  .preco-final .parcela-pf strong {
+    font-family: var(--display);
+    font-style: normal;
+    color: var(--azul-noite);
+    font-weight: 600;
+  }
+
+  .oferta-box .btn {
+    padding: 22px 40px;
+    font-size: 18px;
+    background: var(--bordo);
+    color: var(--marfim);
+    border-bottom-color: var(--dourado);
+  }
+  .oferta-box .btn:hover { background: var(--bordo-80); }
+  .oferta-box .sub-cta {
+    font-family: var(--corpo);
+    font-size: 0.85rem;
+    color: var(--cinza-texto);
+    margin-top: 16px;
+    letter-spacing: 1px;
+  }
+
+  /* ============ GARANTIA ============ */
+  .garantia-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 56px;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  @media (max-width: 640px) {
+    .garantia-container { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+  }
+  .selo-garantia {
+    width: 200px; height: 200px;
+    border: 2px solid var(--dourado);
+    border-radius: 50%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: var(--dourado);
+    position: relative;
+    margin: 0 auto;
+  }
+  .selo-garantia::before {
+    content: ""; position: absolute; inset: 8px;
+    border: 0.5px solid var(--dourado);
+    border-radius: 50%;
+  }
+  .selo-garantia .num-g {
+    font-family: var(--display);
+    font-size: 72px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    color: var(--dourado);
+  }
+  .selo-garantia .label-g {
+    font-family: var(--corpo);
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--marfim);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .selo-garantia .sublabel-g {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 11px;
+    color: var(--dourado);
+    margin-top: 2px;
+    letter-spacing: 1px;
+  }
+  .garantia-texto h3 {
+    font-family: var(--display);
+    font-size: 1.8rem;
+    color: var(--marfim);
+    margin-bottom: 14px;
+  }
+  .garantia-texto h3 em { color: var(--dourado); font-style: italic; }
+  .garantia-texto p {
+    font-family: var(--corpo);
+    font-size: 1.05rem;
+    color: rgba(245,235,214,0.88);
+    line-height: 1.7;
+  }
+  .garantia-texto p em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--dourado);
+  }
+
+  /* ============ FAQ ============ */
+  .faq-list {
+    max-width: 820px;
+    margin: 48px auto 0;
+    border-top: 1px solid var(--cinza-linha);
+  }
+  details.faq-item {
+    border-bottom: 1px solid var(--cinza-linha);
+    padding: 0;
+  }
+  details.faq-item summary {
+    padding: 24px 8px 24px 0;
+    font-family: var(--display);
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--azul-noite);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 44px;
+    line-height: 1.3;
+    transition: color 0.15s;
+  }
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0; top: 22px;
+    font-family: var(--display);
+    font-size: 1.8rem;
+    color: var(--dourado);
+    font-weight: 400;
+    line-height: 1;
+    transition: transform 0.25s ease;
+  }
+  details.faq-item[open] summary::after {
+    content: "−";
+  }
+  details.faq-item summary:hover { color: var(--bordo); }
+  details.faq-item summary em {
+    font-style: italic;
+    color: var(--bordo);
+  }
+  details.faq-item .faq-resposta {
+    padding: 0 48px 24px 0;
+    font-family: var(--corpo);
+    font-size: 1rem;
+    color: var(--grafite);
+    line-height: 1.7;
+  }
+  details.faq-item .faq-resposta em {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: var(--bordo);
+  }
+  details.faq-item .faq-resposta p + p { margin-top: 12px; }
+
+  /* ============ URGÊNCIA FINAL ============ */
+  .urgencia-container {
+    text-align: center;
+    padding: 60px 0 20px;
+  }
+  .urgencia-quote {
+    font-family: var(--display);
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+    line-height: 1.2;
+    color: var(--marfim);
+    max-width: 900px;
+    margin: 0 auto 40px;
+    font-weight: 400;
+  }
+  .urgencia-quote em { color: var(--dourado); font-style: italic; }
+  .urgencia-nota {
+    font-family: var(--editorial);
+    font-style: italic;
+    color: rgba(245,235,214,0.65);
+    max-width: 640px;
+    margin: 0 auto 48px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    background: var(--azul-profundo);
+    color: var(--marfim);
+    padding: 64px 0 32px;
+    border-top: 3px solid var(--dourado);
+  }
+  .footer .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(201,162,75,0.15);
+  }
+  @media (max-width: 760px) {
+    .footer .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  }
+  .footer .brand-footer .eyebrow-f {
+    font-family: var(--corpo);
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--dourado);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .footer .brand-footer .nome-f {
+    font-family: var(--display);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--marfim);
+    line-height: 1;
+  }
+  .footer .brand-footer .nome-f em {
+    font-style: italic; color: var(--dourado);
+    font-weight: 900;
+  }
+  .footer .brand-footer .ass-f {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 1rem;
+    color: rgba(245,235,214,0.7);
+    margin-top: 4px;
+  }
+  .footer h6 {
+    font-family: var(--display);
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--dourado);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer li {
+    font-family: var(--corpo);
+    font-size: 0.92rem;
+    color: rgba(245,235,214,0.72);
+    padding: 4px 0;
+    line-height: 1.5;
+  }
+  .footer li a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .footer li a:hover { border-bottom-color: var(--dourado); }
+  .footer .footer-bottom {
+    padding-top: 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--corpo);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: rgba(245,235,214,0.45);
+    text-transform: uppercase;
+    font-weight: 500;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .footer .footer-min {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .footer .footer-min .copy-line {
+    font-family: var(--corpo);
+    font-size: 0.85rem;
+    color: rgba(245,235,214,0.7);
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .footer .footer-min .disclaimer-line {
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 0.88rem;
+    color: rgba(245,235,214,0.5);
+    line-height: 1.5;
+  }
+
+  /* ============ ANIMATIONS ============ */
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="inner">
+    <div class="marca-nav">
+      <div>
+        <span class="eyebrow-nav">QUESTÕES COMENTADAS</span>
+        <span>Cebraspe <em>100</em></span>
+      </div>
+    </div>
+    <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="cta-nav js-checkout">Matricular — R$ 87 →</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Cebraspe 100 — Questões Comentadas · Prof. Cláudia Kozlowski</span>
+    <h1>Você não tira zero em português por <s>falta de estudo</s>.<br>Tira por estudar a <em>matéria errada</em>.</h1>
+    <p class="sub">100+ questões reais da banca decodificadas em 6 módulos. Pare de estudar gramática — comece a estudar a lógica do Cebraspe.</p>
+    <div class="cta-row">
+      <a href="#matricula" class="btn">Quero aprender o método <span class="arrow">→</span></a>
+      <div class="preco-hero"><strong>R$ 87</strong> à vista no Pix — ou 3x de R$ 33,83</div>
+    </div>
+    <div class="trust-bar">
+      <div class="item"><strong>6</strong>Módulos estruturados</div>
+      <div class="item"><strong>100+</strong>Questões comentadas</div>
+      <div class="item"><strong>7</strong>Dias de garantia</div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 · DEPOIMENTOS REAIS (movido para o topo) ============ -->
+<section class="section">
+  <div class="wrap">
+    <span class="section-eyebrow">I — Quem já passou pelo método</span>
+    <h2>Prints reais de alunas da <em>Prof. Cláudia Kozlowski</em>.</h2>
+    <div class="filete"></div>
+    <p class="sub-h">Conversas espontâneas, recebidas no WhatsApp da professora. Os nomes e telefones foram borrados para preservar a privacidade. O conteúdo das mensagens não foi alterado.</p>
+
+    <div class="depo-img-grid">
+
+      <article class="depo-img-card">
+        <div class="depo-img-frame">
+          <img src="img/depoimentos/depo-01.jpg" alt="Print real de aluna aprovada no TJMS" loading="lazy">
+        </div>
+        <div class="depo-img-meta">
+          <span class="depo-tag">PRINT REAL</span>
+          <span class="depo-context">Aluna aprovada no <em>TJMS</em></span>
+        </div>
+      </article>
+
+      <article class="depo-img-card">
+        <div class="depo-img-frame">
+          <img src="img/depoimentos/depo-02.jpg" alt="Print real de aluna do método" loading="lazy">
+        </div>
+        <div class="depo-img-meta">
+          <span class="depo-tag">PRINT REAL</span>
+          <span class="depo-context">Aluna que voltou a estudar depois de <em>20 anos</em></span>
+        </div>
+      </article>
+
+      <article class="depo-img-card">
+        <div class="depo-img-frame">
+          <img src="img/depoimentos/depo-03.jpg" alt="Print real de aluna do Método M.A.P.A." loading="lazy">
+        </div>
+        <div class="depo-img-meta">
+          <span class="depo-tag">PRINT REAL</span>
+          <span class="depo-context">Aluna do <em>Método M.A.P.A.</em></span>
+        </div>
+      </article>
+
+      <article class="depo-img-card">
+        <div class="depo-img-frame">
+          <img src="img/depoimentos/depo-04.jpg" alt="Print real de aluna que já havia investido em outros cursos" loading="lazy">
+        </div>
+        <div class="depo-img-meta">
+          <span class="depo-tag">PRINT REAL</span>
+          <span class="depo-context">Aluna que já havia investido em <em>outros cursos</em></span>
+        </div>
+      </article>
+
+      <article class="depo-img-card">
+        <div class="depo-img-frame">
+          <img src="img/depoimentos/depo-06.jpg" alt="Print real de concurseira do CNU" loading="lazy">
+        </div>
+        <div class="depo-img-meta">
+          <span class="depo-tag">PRINT REAL</span>
+          <span class="depo-context">Concurseira do <em>CNU</em></span>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="depo-disclaimer">Depoimentos espontâneos, recebidos por mensagem direta. Reproduzidos com autorização das alunas. Identificação ocultada por privacidade.</p>
+  </div>
+</section>
+
+<!-- ============ 02 · DOR / VALIDAÇÃO ============ -->
+<section class="section">
+  <div class="wrap-narrow">
+    <span class="section-eyebrow">II — A cena que se repete</span>
+    <h2>Se você está lendo isto, provavelmente <em>já passou</em> por pelo menos três dessas situações.</h2>
+    <div class="filete"></div>
+    <p class="sub-h">Nenhuma delas é sobre falta de esforço. Nenhuma delas é sobre falta de inteligência. Todas elas têm o mesmo nome.</p>
+
+    <div class="cenario-list">
+      <div class="cenario">
+        <div class="aspas">"</div>
+        <p>Você abriu o gabarito depois da prova e descobriu que errou questões que, na hora, pareciam absolutamente certas. Releu, não achou o erro, ficou com raiva.</p>
+      </div>
+      <div class="cenario">
+        <div class="aspas">"</div>
+        <p>Você já fez mais de dois mil exercícios de português no QConcursos — e a nota continua oscilando na mesma faixa de sempre, prova após prova.</p>
+      </div>
+      <div class="cenario">
+        <div class="aspas">"</div>
+        <p>Você sabe a regra de gramática. Abriu o livro, entendeu. Mas quando cai uma questão do Cebraspe no formato real, a regra parece não servir de nada.</p>
+      </div>
+      <div class="cenario">
+        <div class="aspas">"</div>
+        <p>Por medo do ponto negativo no certo-errado, você marca boa parte das questões em branco — e vê a nota despencar justamente por isso.</p>
+      </div>
+      <div class="cenario">
+        <div class="aspas">"</div>
+        <p>Você sente que o Cebraspe tem uma lógica própria — uma maneira específica de pensar que nenhum professor de gramática parece ensinar.</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 48px; font-family: var(--editorial); font-style: italic; font-size: 1.3rem; text-align: center; color: var(--bordo);">A boa notícia é que o problema tem nome. E ele tem solução.</p>
+  </div>
+</section>
+
+<!-- ============ 02 · REFRAME · BIG IDEA ============ -->
+<section class="section bordo">
+  <div class="wrap-narrow reframe-container">
+    <span class="section-eyebrow">III — O reframe</span>
+    <h2 style="text-align: center; margin: 0 auto 24px;">O problema não é <em>você</em>. É o jogo que <em>você está jogando</em>.</h2>
+    <div class="filete filete-centro"></div>
+
+    <p style="text-align: center; max-width: 740px; margin: 32px auto 0; color: rgba(245,235,214,0.9); font-size: 1.15rem;">Você não perde ponto em português por falta de esforço. Perde por estudar a matéria errada. O Cebraspe não cobra gramática — cobra a lógica do Cebraspe sobre a gramática. E enquanto você estiver estudando gramática, a banca vai continuar te derrubando.</p>
+
+    <div class="reframe-divider"></div>
+
+    <p class="reframe-quote">Fazer duas mil questões sem decodificar o padrão da banca é, simplesmente, repetir <em>o mesmo erro</em> duas mil vezes.</p>
+
+    <div class="reframe-callout">
+      <span class="aspas-big">"</span>
+      <p>O Cebraspe trabalha com inferência disfarçada, paráfrase distorcida, concordância invertida, crase excepcional, regência-armadilha. Nada disso cai na gramática normativa que você estudou no colégio — tudo isso cai na prova.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · DEMONSTRAÇÃO · 3 QUESTÕES ============ -->
+<section class="section">
+  <div class="wrap-narrow">
+    <span class="section-eyebrow">IV — Deixa eu te mostrar</span>
+    <h2>Três questões Cebraspe, <em>três armadilhas</em> — e por que você provavelmente cairia nas três.</h2>
+    <div class="filete"></div>
+    <p class="sub-h">Em cada uma delas, a regra que você aprendeu está certa — e não serve. Veja.</p>
+
+    <div class="questoes-grid">
+
+      <article class="questao-card">
+        <div class="tab">
+          <span class="romano">I</span>
+          <span class="tipo">Inferência</span>
+        </div>
+        <div class="conteudo">
+          <div class="origem">Cebraspe · Estilo de prova recente</div>
+          <p class="texto-base">"A pandemia acelerou o processo de digitalização do setor público brasileiro, obrigando instituições a adotar ferramentas que, em condições normais, levariam anos para ser implementadas."</p>
+          <div class="assertiva">Infere-se do texto que, sem a pandemia, a digitalização do setor público seria impossível.</div>
+          <span class="gabarito">Gabarito — Errado</span>
+          <div class="decodificacao">
+            <strong>Decodificando a pegadinha</strong>
+            O texto diz que a pandemia <em>acelerou</em> — não que foi <em>condição</em> para existir. "Acelerar" pressupõe que o processo já existia. A assertiva extrapola e transforma "acelerou" em "viabilizou". É uma das armadilhas mais comuns da banca: substituir uma relação de <em>intensidade</em> por uma relação de <em>causa única</em>.
+          </div>
+        </div>
+      </article>
+
+      <article class="questao-card">
+        <div class="tab">
+          <span class="romano">II</span>
+          <span class="tipo">Concordância</span>
+        </div>
+        <div class="conteudo">
+          <div class="origem">Cebraspe · Estilo de prova recente</div>
+          <div class="assertiva">Na frase "fazem cinco anos que o servidor tomou posse", o verbo "fazer" concorda corretamente com o sujeito "cinco anos".</div>
+          <span class="gabarito">Gabarito — Errado</span>
+          <div class="decodificacao">
+            <strong>Decodificando a pegadinha</strong>
+            "Fazer" com sentido de <em>tempo decorrido</em> é verbo impessoal — não tem sujeito. Fica sempre no singular: "faz cinco anos". O Cebraspe sabe que a maioria dos candidatos aprendeu "concordância verbal" como algo que depende do sujeito. Aqui, a regra geral <em>te atrapalha</em> — porque a construção não apresenta sujeito.
+          </div>
+        </div>
+      </article>
+
+      <article class="questao-card">
+        <div class="tab">
+          <span class="romano">III</span>
+          <span class="tipo">Crase</span>
+        </div>
+        <div class="conteudo">
+          <div class="origem">Cebraspe · Estilo de prova recente</div>
+          <div class="assertiva">A expressão "o edital está aberto à candidatas com deficiência" está gramaticalmente correta quanto ao uso do acento indicativo de crase.</div>
+          <span class="gabarito">Gabarito — Errado</span>
+          <div class="decodificacao">
+            <strong>Decodificando a pegadinha</strong>
+            Antes de palavra feminina no plural <em>sem artigo definido</em>, não há crase. A construção correta é "aberto a candidatas" (sem acento) — porque não há artigo "as" se fundindo com a preposição "a". O Cebraspe adora te fazer confiar no automático ("palavra feminina → tem crase"). Aqui, o automático te derruba.
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p style="text-align: center; margin-top: 48px; font-family: var(--editorial); font-style: italic; font-size: 1.25rem; color: var(--cinza-texto); max-width: 700px; margin-left: auto; margin-right: auto;">Três questões. Três armadilhas diferentes. E é exatamente isso que a banca faz — milhares de vezes, em todos os editais — com o candidato que só estudou gramática.</p>
+  </div>
+</section>
+
+<!-- ============ 04 · APRESENTAÇÃO DO PRODUTO ============ -->
+<section class="section dark">
+  <div class="wrap">
+    <div class="apresenta-grid">
+      <div class="apresenta-text">
+        <span class="section-eyebrow">V — É por isso que eu criei</span>
+        <h2>Cebraspe <em>100</em></h2>
+        <p>Um curso construído com uma única obsessão — <em>decodificar o padrão da banca</em>.</p>
+        <p>Não é um curso de gramática. A gramática você já aprendeu no colégio, já reviu nos cursinhos, já tem os livros na estante. O Cebraspe 100 não vai repetir o que você já sabe.</p>
+        <p>O que você vai encontrar aqui é <em>engenharia reversa</em>: 100+ questões reais de provas recentes da banca, decodificadas uma por uma, comentadas com o raciocínio exato que a banca usa para formular assertivas, posicionar pegadinhas e decidir o gabarito. Organizadas em 6 módulos progressivos, acompanhadas de um planner estratégico de estudo e de um grupo exclusivo no WhatsApp em que a Prof. Cláudia Kozlowski responde dúvidas diretamente.</p>
+        <p>Em resumo: é o que eu <em>gostaria de ter tido</em> antes de passar no primeiro concurso Cebraspe da minha vida.</p>
+      </div>
+      <div>
+        <div class="mockup-capa">
+          <div class="top-cap">
+            <div class="eyebrow-cap">QUESTÕES COMENTADAS</div>
+            <div class="nome-cap">Cebraspe</div>
+          </div>
+          <div class="num-cap">100</div>
+          <div class="bot-cap">
+            <div class="ass-cap">por Prof. Cláudia</div>
+            <div class="filete-cap"></div>
+            <div class="meta-cap">VOLUME I &middot; 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · BÔNUS ============ -->
+<section class="section bordo">
+  <div class="wrap">
+    <span class="section-eyebrow">VI — Além do curso</span>
+    <h2>Dois ativos que fazem <em>toda a diferença</em>.</h2>
+    <p class="sub-h" style="color: rgba(245,235,214,0.78);">Não são "bônus de lançamento" — são parte do método. Sem eles, o curso perde ritmo. Com eles, o estudo vira sistema.</p>
+
+    <div class="bonus-grid">
+      <article class="bonus-card">
+        <span class="tag-b">Bônus 01 · Incluso</span>
+        <h3>Planner Estratégico <em>de Estudo</em></h3>
+        <p>Um Planner Estratégico de Estudo para organizar a sua preparação e manter consistência ao longo da rotina — em PDF editável, para imprimir ou preencher no computador.</p>
+        <div class="valor-b">Valor avulso — <strong>R$ 97</strong></div>
+      </article>
+
+      <article class="bonus-card">
+        <span class="tag-b">Bônus 02 · Incluso</span>
+        <h3>Grupo <em>Exclusivo</em> no WhatsApp</h3>
+        <p>Comunidade restrita a alunos matriculados, onde a Prof. Cláudia Kozlowski responde dúvidas diretamente, publica questões caídas recentemente em concursos Cebraspe e faz correções ao vivo antes das provas dos editais abertos.</p>
+        <p>Espaço <em>moderado</em>, sem spam de cursos de terceiros — comunidade para estudar de verdade.</p>
+        <div class="valor-b">Valor avulso — <strong>R$ 147</strong></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 · PROFESSORA ============ -->
+<section class="section marfim-dense">
+  <div class="wrap">
+    <span class="section-eyebrow">VII — Quem vai te guiar</span>
+    <h2>Cláudia Kozlowski — <em>a professora</em> que decodifica o Cebraspe.</h2>
+    <div class="filete"></div>
+
+    <div class="professora-grid">
+      <div class="foto-prof">
+        <img src="img/prof-claudia-kozlowski.jpg" alt="Professora Cláudia Kozlowski" loading="lazy">
+      </div>
+      <div class="prof-text">
+        <div class="nome-prof">Cláudia Kozlowski</div>
+        <div class="titulo-prof">Auditora Fiscal · Professora de Português para Concursos · +20 anos de docência</div>
+        <p>Sou Auditora Fiscal, aprovada em um dos concursos mais concorridos do país, e professora de Português para concursos públicos há mais de <em>20 anos</em>.</p>
+        <p>Depois de analisar milhares de questões do Cebraspe e identificar padrões recorrentes que a maioria dos candidatos não enxerga, desenvolvi o <em>Método M.A.P.A.</em> — um sistema estratégico que elimina o estudo genérico e foca exclusivamente no que a banca realmente cobra.</p>
+        <p>Meu compromisso é simples: fazer você parar de temer Português e começar a pontuar com <em>segurança estratégica</em>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 · PARA QUEM ============ -->
+<section class="section dark">
+  <div class="wrap-narrow">
+    <span class="section-eyebrow">VIII — Sinceridade editorial</span>
+    <h2>Este curso <em>não é</em> para todo mundo — e tudo bem.</h2>
+    <div class="filete"></div>
+
+    <div class="paraquem-grid">
+      <div class="paraquem-col">
+        <h3>É para você <em>se</em></h3>
+        <ul>
+          <li>Você está se preparando para algum concurso da banca Cebraspe — INSS, PRF, PF, Receita Federal, SEFAZ, área Fiscal, TCU, CGU, BB, Caixa, polícias civis ou outro edital Cebraspe.</li>
+          <li>Você já tem uma base mínima de gramática e não precisa revisar a matéria do colégio — precisa dominar como a banca cobra.</li>
+          <li>Você já fez provas Cebraspe (ou simulados no padrão da banca) e a nota de português tem sido seu ponto de fraqueza.</li>
+          <li>Você tem pouco tempo por dia para estudar e precisa de um método enxuto, direto ao ponto, sem aula de 4 horas.</li>
+          <li>Você quer um critério claro para o certo-errado — e parar de perder ponto por marcar "em branco" por insegurança.</li>
+        </ul>
+      </div>
+      <div class="paraquem-col nao">
+        <h3>Não é para você <em>se</em></h3>
+        <ul>
+          <li>Você está começando português do zero e ainda precisa revisar gramática básica antes de resolver questões de nível de concurso federal.</li>
+          <li>Você se prepara para banca que não seja Cebraspe (FGV, Vunesp, FCC) — o método aqui é específico e não se traduz automaticamente.</li>
+          <li>Você procura um curso gigante, com 200 horas de aula e tudo "do zero ao avançado" — aqui é curto, intensivo, para quem já sabe o suficiente.</li>
+          <li>Você quer garantia de aprovação — isso nenhum curso sério promete. Aqui eu prometo o método; o resto depende de você.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · DEPOIMENTOS REMOVIDO DESTA POSIÇÃO (movido para topo, agora seção I) ============ -->
+
+<!-- ============ 09 · OFERTA · PREÇO ============ -->
+<section class="section bordo" id="matricula">
+  <div class="wrap-narrow">
+    <span class="section-eyebrow">IX — A matrícula</span>
+    <h2 style="text-align: center; margin: 0 auto 16px;">Tudo somado — pague <em>só pela entrada</em>.</h2>
+    <p class="sub-h" style="text-align: center; margin: 0 auto 0; max-width: 620px; color: rgba(245,235,214,0.78);">Se comprados separadamente, os três ativos somam quinhentos e quarenta e um reais. Neste lançamento do funil perpétuo, o pacote inteiro entra pela fração do valor.</p>
+
+    <div class="oferta-box">
+      <span class="selo-oferta">OFERTA OFICIAL &middot; CEBRASPE 100</span>
+      <h3>Acesso completo ao <em>Método Cebraspe 100</em></h3>
+
+      <div class="stack">
+        <div class="stack-item">
+          <div class="nome-s">Curso Cebraspe 100 — 6 módulos, 100+ questões comentadas<em>Videoaulas · PDFs · Material de apoio</em></div>
+          <div class="valor-s">R$ 297</div>
+        </div>
+        <div class="stack-item">
+          <div class="nome-s">Planner Estratégico de Estudo<em>Bônus — PDF editável</em></div>
+          <div class="valor-s">R$ 97</div>
+        </div>
+        <div class="stack-item">
+          <div class="nome-s">Grupo VIP no WhatsApp<em>Bônus — dúvidas diretas com a Prof. Cláudia Kozlowski</em></div>
+          <div class="valor-s">R$ 147</div>
+        </div>
+        <div class="stack-total">
+          <div class="nome-t">Soma dos ativos</div>
+          <div class="valor-t">R$ 541</div>
+        </div>
+      </div>
+
+      <div class="preco-final">
+        <div class="label-pf">Hoje, à vista no Pix, você paga</div>
+        <div class="valor-pf"><span class="cifra">R$</span>87</div>
+        <div class="parcela-pf">ou <strong>3x de R$ 33,83</strong> no cartão</div>
+      </div>
+
+      <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="btn js-checkout">Matricular agora — Pagar R$ 87 <span class="arrow">→</span></a>
+      <div class="sub-cta">PAGAMENTO 100% SEGURO · PIX / CARTÃO · ACESSO LIBERADO NA HORA</div>
+    </div>
+
+    <p style="text-align: center; margin-top: 32px; font-family: var(--editorial); font-style: italic; font-size: 1.1rem; color: rgba(245,235,214,0.7); max-width: 620px; margin-left: auto; margin-right: auto;">Para comparação — a taxa de inscrição de um único concurso federal custa entre R$ 95 e R$ 250. O método que vai te preparar para todos eles custa menos.</p>
+  </div>
+</section>
+
+<!-- ============ 10 · GARANTIA ============ -->
+<section class="section dark">
+  <div class="wrap">
+    <span class="section-eyebrow" style="text-align: center; display: block; margin-bottom: 14px;">X — A garantia</span>
+
+    <div class="garantia-container">
+      <div class="selo-garantia">
+        <div class="num-g">7</div>
+        <div class="label-g">DIAS</div>
+        <div class="sublabel-g">Garantia</div>
+      </div>
+      <div class="garantia-texto">
+        <h3>Sete dias de <em>garantia incondicional</em>.</h3>
+        <p>Você entra, estuda à vontade, vê todas as aulas que quiser, baixa o planner, entra no grupo. Se em <em>sete dias</em> você não achar que este é o curso mais objetivo para dominar o português Cebraspe que já passou pela sua frente — solicita o reembolso, sem justificativa, e devolvemos o valor integral.</p>
+        <p>Sem pegadinha. Sem formulário. Sem "entre em contato com o suporte e negocie". A garantia é <em>minha</em> — assumida por escrito — de que o método entrega o que promete. Se não entregar, o risco fica comigo, não com você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 · FAQ ============ -->
+<section class="section">
+  <div class="wrap-narrow">
+    <span class="section-eyebrow">XI — Perguntas frequentes</span>
+    <h2>O que eu <em>mais escuto</em> antes da matrícula.</h2>
+    <div class="filete"></div>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>Eu já comprei curso de português antes e não funcionou. Por que <em>este</em> seria diferente?</summary>
+        <div class="faq-resposta">
+          <p>Porque os outros cursos foram desenhados para ensinar gramática — e você já sabe gramática. Este curso é desenhado para ensinar <em>como a banca pensa</em>: qual a lógica por trás de cada assertiva, onde a pegadinha está escondida, por que o gabarito é o que é. São entregas diferentes. Você pode ter comprado três cursos do tipo A, mas nunca um do tipo B.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>O preço é <em>baixo demais</em> — isso não é sinal de que o conteúdo é raso?</summary>
+        <div class="faq-resposta">
+          <p>Entendo a suspeita, mas o raciocínio aqui é outro. O Cebraspe 100 é um produto de entrada — desenhado para ser acessível para o máximo de concurseiros possível, sem comprometer a qualidade do conteúdo.</p>
+          <p>Se for olhar pela soma das partes, o valor justo é R$ 297 (curso) + R$ 97 (planner) + R$ 147 (grupo) = R$ 541. A escolha de cobrar R$ 87 não é sobre <em>baratear o conteúdo</em> — é sobre <em>remover a objeção de preço</em> para que o método chegue na sua frente antes do próximo edital.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Vai me preparar <em>para o concurso que eu estou fazendo</em>?</summary>
+        <div class="faq-resposta">
+          <p>Se é Cebraspe — sim, seja INSS, PRF, PF (todos os cargos), Receita Federal, SEFAZ, área Fiscal, TCU, STJ, STF, CGU, ANATEL/ANEEL/ANS, polícias civis estaduais, PCDF, BB ou Caixa. A banca cobra português com o <em>mesmo padrão de pensamento</em> em todos os editais. Dominar esse padrão serve para qualquer concurso Cebraspe — atual e futuro.</p>
+          <p>Se é outra banca (FGV, Vunesp, FCC), este curso não foi desenhado para você — e eu prefiro te dizer isso agora do que ver você decepcionado depois.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Eu não tenho muito tempo para estudar. O curso é longo?</summary>
+        <div class="faq-resposta">
+          <p>O curso foi desenhado para quem estuda 1 a 2 horas por dia (o perfil de CLT que estuda à noite). Os 6 módulos totalizam em torno de 12 a 15 horas de aula — o que, com o planner estratégico em 12 semanas, dá uma média de 1 hora de aula por semana, mais tempo de questão comentada e revisão.</p>
+          <p>Não tem aula de 4 horas. Não tem enrolação. Cada vídeo é enxuto e focado em um ponto específico — para caber na rotina real de quem trabalha e estuda.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Por quanto tempo eu tenho <em>acesso ao curso</em>?</summary>
+        <div class="faq-resposta">
+          <p>Você tem acesso ao curso Cebraspe 100 por <em>6 meses</em> a partir da data da matrícula — tempo suficiente para concluir os 6 módulos no seu ritmo, fazer revisão antes das provas e voltar ao conteúdo sempre que precisar. O Grupo VIP no WhatsApp segue ativo durante o mesmo período.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como funciona a garantia de 7 dias?</summary>
+        <div class="faq-resposta">
+          <p>Você tem 7 dias a partir da compra. Nesse período, se quiser cancelar por qualquer motivo (ou nenhum), basta solicitar o reembolso e o valor cai de volta na sua conta em até 7 dias úteis. Sem formulário, sem justificativa, sem perguntas. A garantia é incondicional — é isso que <em>"incondicional"</em> significa.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Quando eu recebo o acesso?</summary>
+        <div class="faq-resposta">
+          <p>Na hora. Assim que o pagamento é confirmado (Pix leva segundos; cartão, de 1 a 10 minutos), você recebe o e-mail com o link da área de membros e o convite para o grupo do WhatsApp. Pode começar a estudar no mesmo dia.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>E se eu tiver dúvida específica durante o curso?</summary>
+        <div class="faq-resposta">
+          <p>Para isso existe o grupo VIP do WhatsApp — dúvidas são respondidas <em>pela Prof. Cláudia Kozlowski diretamente</em>, não por robô, não por monitor terceirizado. É o canal principal de suporte pedagógico do curso.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 · URGÊNCIA PERMANENTE · CTA FINAL ============ -->
+<section class="section bordo">
+  <div class="wrap-narrow urgencia-container">
+    <span class="section-eyebrow">XII — Última palavra</span>
+
+    <p class="urgencia-quote">Cada semana em que você continua estudando gramática é uma semana a menos até o <em>próximo edital Cebraspe</em> — e uma semana de vantagem para quem já começou a decodificar a banca.</p>
+
+    <p class="urgencia-nota">O Cebraspe 100 não tem "oferta relâmpago", não tem "últimas vagas", não tem contador falso. O que ele tem é um preço de entrada deliberadamente acessível — para que o custo da decisão seja menor do que o custo de <em>adiar</em> a decisão.</p>
+
+    <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="btn btn-reverse js-checkout">Matricular agora — R$ 87 à vista no Pix <span class="arrow">→</span></a>
+
+    <p style="margin-top: 32px; font-family: var(--corpo); font-size: 0.8rem; letter-spacing: 2px; color: rgba(245,235,214,0.5); text-transform: uppercase;">Pagamento seguro · Acesso imediato · Garantia de 7 dias</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-min">
+      <p class="copy-line">&copy; 2026 Professora Cláudia Kozlowski &mdash; Todos os direitos reservados.</p>
+      <p class="disclaimer-line">Este produto é um infoproduto digital. Resultados podem variar conforme dedicação e esforço individual.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  if ('IntersectionObserver' in window) {
+    document.querySelectorAll('.section, .hero, .oferta-box, .modulo, .bonus-card, .depo, .questao-card').forEach(el => {
+      el.classList.add('reveal');
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }
+</script>
+
+<!-- Transporte de UTMs da página de vendas para o checkout -->
+<script>
+(function() {
+  // Lê os UTMs da URL atual da página
+  var pageParams = new URLSearchParams(window.location.search);
+  var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  var utmString = '';
+
+  utmKeys.forEach(function(key) {
+    var value = pageParams.get(key);
+    if (value) {
+      utmString += (utmString ? '&' : '') + key + '=' + encodeURIComponent(value);
+    }
+  });
+
+  // Sem UTMs na URL: não altera nada nos links
+  if (!utmString) return;
+
+  // Atualiza todos os links de checkout (classe .js-checkout)
+  document.querySelectorAll('a.js-checkout').forEach(function(link) {
+    var href = link.getAttribute('href');
+    if (!href || href.charAt(0) === '#') return;
+    var separator = href.indexOf('?') === -1 ? '?' : '&';
+    link.setAttribute('href', href + separator + utmString);
+  });
+})();
+</script>
+
+</body>
+</html>
