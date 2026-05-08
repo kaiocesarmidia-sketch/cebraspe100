@@ -57,8 +57,8 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     background: var(--marfim);
     color: var(--tinta);
     font-family: var(--corpo);
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -70,8 +70,8 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
 
   .eyebrow {
     font-family: var(--corpo);
-    font-size: 11px;
-    letter-spacing: 0.4em;
+    font-size: 13px;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 20px;
@@ -116,8 +116,9 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
   }
   .btn .arrow {
     font-family: var(--display);
-    font-style: italic;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 4px;
   }
   .btn-reverse {
     background: var(--marfim);
@@ -201,10 +202,11 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
   .hero .wrap { position: relative; }
   .hero .eyebrow { color: var(--dourado); }
   .hero h1 {
-    font-size: clamp(2.2rem, 5.5vw, 4rem);
-    line-height: 1.02;
+    font-size: clamp(2rem, 4.6vw, 3.6rem);
+    line-height: 1.08;
     max-width: 960px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+    letter-spacing: -0.005em;
   }
   .hero h1 em { color: var(--dourado); }
   .hero h1 s {
@@ -213,13 +215,14 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     opacity: 0.75;
   }
   .hero .sub {
-    font-family: var(--editorial);
-    font-size: clamp(1.15rem, 2vw, 1.45rem);
-    font-style: italic;
-    color: rgba(245,235,214,0.82);
+    font-family: var(--corpo);
+    font-size: clamp(1.1rem, 1.8vw, 1.32rem);
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(245,235,214,0.88);
     max-width: 680px;
     margin-bottom: 40px;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .hero .cta-row {
     display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
@@ -289,8 +292,8 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
 
   .section-eyebrow {
     font-family: var(--corpo);
-    font-size: 11px;
-    letter-spacing: 0.4em;
+    font-size: 13px;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--bordo);
@@ -313,12 +316,13 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
   .section.dark h2 em, .section.bordo h2 em { color: var(--dourado); }
 
   .section .sub-h {
-    font-family: var(--editorial);
-    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
-    font-style: italic;
+    font-family: var(--corpo);
+    font-size: clamp(1.05rem, 1.6vw, 1.18rem);
+    font-style: normal;
+    font-weight: 400;
     color: var(--cinza-texto);
     max-width: 720px;
-    line-height: 1.5;
+    line-height: 1.55;
     margin-bottom: 48px;
   }
   .section.dark .sub-h, .section.bordo .sub-h {
@@ -1124,12 +1128,13 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     font-weight: 500;
   }
   .stack .stack-item .nome-s em {
-    font-family: var(--editorial);
-    font-style: italic;
+    font-family: var(--corpo);
+    font-style: normal;
     color: var(--cinza-texto);
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     display: block;
     font-weight: 400;
+    margin-top: 2px;
   }
   .stack .stack-item .valor-s {
     font-family: var(--display);
@@ -1167,11 +1172,12 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     margin: 32px 0 24px;
   }
   .preco-final .label-pf {
-    font-family: var(--editorial);
-    font-style: italic;
+    font-family: var(--corpo);
+    font-style: normal;
     font-size: 1rem;
     color: var(--cinza-texto);
     margin-bottom: 6px;
+    font-weight: 500;
   }
   .preco-final .valor-pf {
     font-family: var(--display);
@@ -1188,11 +1194,12 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
     color: var(--bordo);
   }
   .preco-final .parcela-pf {
-    font-family: var(--editorial);
-    font-style: italic;
-    font-size: 1.1rem;
+    font-family: var(--corpo);
+    font-style: normal;
+    font-size: 1.05rem;
     color: var(--grafite);
     margin-top: 12px;
+    font-weight: 400;
   }
   .preco-final .parcela-pf strong {
     font-family: var(--display);
@@ -1497,23 +1504,22 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
         <span>Cebraspe <em>100</em></span>
       </div>
     </div>
-    <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="cta-nav js-checkout">Matricular — R$ 87 →</a>
+    <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="cta-nav js-checkout">Dominar o Cebraspe →</a>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">Cebraspe 100 — Questões Comentadas · Prof. Cláudia Kozlowski</span>
-    <h1>Você não tira zero em português por <s>falta de estudo</s>.<br>Tira por estudar a <em>matéria errada</em>.</h1>
-    <p class="sub">100+ questões reais da banca decodificadas em 6 módulos. Pare de estudar gramática — comece a estudar a lógica do Cebraspe.</p>
+    <span class="eyebrow">Cebraspe 100 — Questões Reais Comentadas em Vídeo</span>
+    <h1>Domine Português do Cebraspe, pare de perder pontos decisivos e <em>garanta sua aprovação</em>.</h1>
+    <p class="sub">100+ questões reais da banca decodificadas em 6 módulos. Pare de estudar gramática e comece a estudar a lógica do Cebraspe.</p>
     <div class="cta-row">
-      <a href="#matricula" class="btn">Quero aprender o método <span class="arrow">→</span></a>
-      <div class="preco-hero"><strong>R$ 87</strong> à vista no Pix — ou 3x de R$ 33,83</div>
+      <a href="#matricula" class="btn">Quero dominar o Cebraspe <span class="arrow">→</span></a>
     </div>
     <div class="trust-bar">
       <div class="item"><strong>6</strong>Módulos estruturados</div>
-      <div class="item"><strong>100+</strong>Questões comentadas</div>
+      <div class="item"><strong>100+</strong>Questões comentadas em vídeo</div>
       <div class="item"><strong>7</strong>Dias de garantia</div>
     </div>
   </div>
@@ -1770,7 +1776,10 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
 
     <div class="professora-grid">
       <div class="foto-prof">
-        <img src="img/prof-claudia-kozlowski.jpg" alt="Professora Cláudia Kozlowski" loading="lazy">
+        <picture>
+          <source srcset="img/prof-claudia-kozlowski.webp" type="image/webp">
+          <img src="img/prof-claudia-kozlowski.jpg" alt="Professora Cláudia Kozlowski" loading="lazy" width="933" height="1400">
+        </picture>
       </div>
       <div class="prof-text">
         <div class="nome-prof">Cláudia Kozlowski</div>
@@ -1852,11 +1861,11 @@ src="https://www.facebook.com/tr?id=2170582326755653&ev=PageView&noscript=1"
         <div class="parcela-pf">ou <strong>3x de R$ 33,83</strong> no cartão</div>
       </div>
 
-      <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="btn js-checkout">Matricular agora — Pagar R$ 87 <span class="arrow">→</span></a>
+      <a href="https://profclaudiakoz.com.br/launch-checkout/7171/personal-data" class="btn js-checkout">Sim, quero garantir minha vaga <span class="arrow">→</span></a>
       <div class="sub-cta">PAGAMENTO 100% SEGURO · PIX / CARTÃO · ACESSO LIBERADO NA HORA</div>
     </div>
 
-    <p style="text-align: center; margin-top: 32px; font-family: var(--editorial); font-style: italic; font-size: 1.1rem; color: rgba(245,235,214,0.7); max-width: 620px; margin-left: auto; margin-right: auto;">Para comparação — a taxa de inscrição de um único concurso federal custa entre R$ 95 e R$ 250. O método que vai te preparar para todos eles custa menos.</p>
+    <p style="text-align: center; margin-top: 32px; font-family: var(--corpo); font-style: normal; font-size: 1rem; color: rgba(245,235,214,0.78); max-width: 620px; margin-left: auto; margin-right: auto; line-height: 1.55;">Para comparação: a taxa de inscrição de um único concurso federal custa entre R$ 95 e R$ 250. O método que vai te preparar para todos eles custa menos.</p>
   </div>
 </section>
 
